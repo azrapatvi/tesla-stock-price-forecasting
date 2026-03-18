@@ -68,13 +68,6 @@ The goal is to analyze historical stock data and predict future trends while eva
 * Unable to capture **high volatility** of stock market
 * Predictions are **smooth compared to actual values**
 
----
-
-## 📊 Visualization
-
-### Actual vs Predicted
-
-(Add your graph screenshot here)
 
 ---
 
