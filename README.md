@@ -64,22 +64,44 @@ The goal is to analyze historical stock data and predict future trends while eva
 
 ## 📉 Results
 
-* Model successfully captures **overall trend** of stock prices
-* Unable to capture **high volatility** of stock market
-* Predictions are **smooth compared to actual values**
+* The model successfully captures the **overall upward and downward trend** of Tesla stock prices.
+* Predictions are **smooth**, indicating strong trend learning.
+* However, the model fails to capture **short-term fluctuations and volatility**.
 
+### 📊 Actual vs Predicted Visualization
 
----
+<img width="1919" height="909" alt="image" src="https://github.com/user-attachments/assets/f9e55197-76ac-453f-a376-205bed9781d1" />
 
-## 📈 Sample Output
+## 📊 Model Evaluation
+
+To better understand the performance of the model, actual stock prices were compared with predicted values (`yhat`).
+
+### 🔍 Key Observations
+
+* The model closely follows the **general trend** of the stock price.
+* Predictions are **less volatile** compared to actual values.
+* Sudden spikes and drops in stock price are **not captured effectively**.
+
+### 📈 Interpretation
+
+This behavior indicates that Prophet is effective for:
+
+* Trend detection 📈
+* Long-term forecasting
+
+But less effective for:
+
+* Short-term trading signals ⚡
+* Highly volatile financial data
+
+### 📋 Evaluation Data Sample
 
 | Date       | Actual (Close) | Predicted (yhat) |
 | ---------- | -------------- | ---------------- |
-| 2025-03-18 | 225.30         | 250.22           |
+| 2025-03-18 | 225.31         | 250.22           |
 | 2025-03-19 | 235.86         | 253.33           |
 | ...        | ...            | ...              |
 
----
 
 ## ⚠️ Limitations
 
